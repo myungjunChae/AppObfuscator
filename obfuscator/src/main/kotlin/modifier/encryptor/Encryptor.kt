@@ -136,11 +136,9 @@ class Encryptor private constructor() : AbstractModifier() {
 
     override fun run() {
         /**
-         * string literal json 생성 (o)
-         * application class추가 -> xml 추가
-         * 첫 실행 activity에 encryption() 추가 (o)
-         * 첫 실행 activity onCreate()에서 encryption 호출 (o)
-         * string literal -> securePref.get() 치환 (o)
+         * string literal json 생성
+         * string literal -> securePref.get() 치환
+         * application class 생성
          */
         MakeJson(targetAppName).run()
         ReplaceLiteral(targetAppName).run()
